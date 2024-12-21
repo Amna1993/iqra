@@ -4,7 +4,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false); // Close the menu on navigation
   };
 
@@ -32,24 +35,32 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:flex space-y-4 md:space-y-0 md:space-x-8 absolute md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent px-6 md:px-0 py-4 md:py-0`}
         >
-          {["home", "about", "bio", "publications", "team", "skills", "contact"].map(
-            (section, index) => (
-              <li
-                key={section}
-                className={`text-lg text-center md:text-left ${
-                  isOpen ? "animate-fade-in" : ""
-                }`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+          {[
+            "home",
+            "research",
+            "team",
+            "bio",
+            "publications",
+            "courses",
+            "partnerships",
+            "funding",
+            "join-us",
+          ].map((section, index) => (
+            <li
+              key={section}
+              className="text-lg text-center md:text-left"
+            >
+              <button
+                onClick={() => handleScroll(section)}
+                className="block md:inline hover:text-yellow-400 focus:outline-none w-full py-2 transition duration-300"
               >
-                <button
-                  onClick={() => handleScroll(section)}
-                  className="block md:inline hover:text-yellow-400 focus:outline-none w-full py-2 transition duration-300"
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </button>
-              </li>
-            )
-          )}
+                {section
+                  .split("-")
+                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(" ")}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
