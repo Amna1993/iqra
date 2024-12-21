@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center px-6 md:px-20 lg:px-32"
+      className="h-screen bg-gradient-to-b from-black via-black to-black text-white flex items-center px-6 md:px-20 lg:px-32"
     >
       <div className="flex flex-col md:flex-row items-center justify-between w-full animate-fade-in">
         {/* Left Side - Circular Image */}
