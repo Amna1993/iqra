@@ -1,4 +1,9 @@
 import React from "react";
+import device from "../assets/device.png";
+import mobility from "../assets/mobility.webp";
+import ai from "../assets/ai.jpeg";
+import beam from "../assets/beam.png";
+import network from "../assets/network.png";
 
 const Research = () => {
   const researchAreas = [
@@ -6,31 +11,31 @@ const Research = () => {
       title: "Resource Allocation",
       description:
         "Developing efficient algorithms for dynamic resource management in Device-to-Device (D2D) communications, IoT, and cell-free networks to maximize throughput and minimize latency.",
-      image: "/path-to-entertainment-image.jpg",
+      image: device,
     },
     {
       title: "Mobility-Aware Networking",
       description:
         "Investigating the impact of user mobility on resource allocation, network slicing, and signal optimization to enhance service quality in highly dynamic environments.",
-      image: "/path-to-human-centered-ai-image.jpg",
+      image: mobility,
     },
     {
       title: "AI-Driven Optimization",
       description:
         "Leveraging artificial intelligence, including deep learning and reinforcement learning, to address complex challenges like interference management, energy efficiency, and predictive analytics in network optimization.",
-      image: "/path-to-human-system-interactions-image.jpg",
+      image: ai,
     },
     {
       title: "Beamforming and MIMO Systems",
       description:
         "Exploring advanced techniques like massive MIMO and intelligent beamforming to improve signal quality, spectral efficiency, and coverage in dense urban environments.",
-      image: "/path-to-human-system-interactions-image.jpg",
+      image: beam,
     },
     {
       title: "Beyond 5G (6G) Networks",
       description:
         "Contributing to the evolution of 6G networks by exploring emerging concepts like terahertz communication, ultra-reliable low-latency communication (URLLC), and AI-native networks.",
-      image: "/path-to-human-system-interactions-image.jpg",
+      image: network,
     },
   ];
 
@@ -60,31 +65,36 @@ const Research = () => {
         </h3>
 
         <div className="space-y-16">
-          {researchAreas.map((area, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row items-center ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
-            >
-              <div className="md:w-1/2 p-4">
-                <img
-                  src={area.image}
-                  alt={area.title}
-                  className="rounded-lg shadow-lg transition-transform transform hover:scale-105"
-                />
-              </div>
-              <div className="md:w-1/2 md:px-8 mt-6 md:mt-0">
-                <h3 className="text-2xl font-bold text-yellow-400 mb-4">
-                  {area.title}
-                </h3>
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  {area.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+  {researchAreas.map((area, index) => (
+    <div
+      key={index}
+      className={`flex flex-col md:flex-row items-center ${
+        index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+      }`}
+    >
+      {/* Image Section */}
+      <div className="md:w-1/2 flex justify-center items-center p-6">
+        <img
+          src={area.image}
+          alt={area.title}
+          className="w-96 h-64 rounded-lg shadow-lg object-cover transition-transform transform hover:scale-105"
+        />
+      </div>
+
+      {/* Text Section */}
+      <div className="md:w-1/2 md:px-8 mt-6 md:mt-0">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+          {area.title}
+        </h3>
+        <p className="text-gray-300 text-lg leading-relaxed">
+          {area.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
+
 
         {/* Contributions Section */}
         <div className="mt-16">

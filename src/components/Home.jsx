@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../assets/profile.jpeg';
 
 const Home = () => {
   return (
@@ -10,10 +11,10 @@ const Home = () => {
         {/* Left Side - Circular Image */}
         <div className="mb-10 md:mb-0">
           <div className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-xl border-4 border-yellow-400">
-            <img
-              src="/path-to-your-image.jpg"
+            <img 
+              src={profile}
               alt="Iqra"
-              className="w-full h-full object-cover hover:scale-105 transform transition duration-500"
+              className="w-full h-full object-cover object-top hover:scale-105 transform transition duration-500"
             />
           </div>
         </div>
@@ -21,7 +22,7 @@ const Home = () => {
         {/* Right Side - Text Content */}
         <div className="text-center md:text-left md:ml-12 space-y-6">
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-            I'm <span className="text-yellow-400 gradient-text">Iqra Batool</span>
+            <span className="text-yellow-400 gradient-text">Iqra Batool</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
             I’m a passionate and dedicated PhD researcher with expertise in <span className="text-yellow-400">wireless
