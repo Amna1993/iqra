@@ -37,10 +37,19 @@ const Research = () => {
   return (
     <section id="research" className="py-20 bg-black text-white">
       <div className="container mx-auto px-6">
+      <h1 className="text-5xl font-extrabold text-yellow-400 text-center mb-12">
+          Research
+        </h1>
+        <h2>5G/6G Wireless communication and Networks</h2>
+        <p>As a researcher in 5G/6G wireless communication and networks, my work focuses on
+        advancing the technologies that drive next-generation wireless systems. These networks
+        represent the future of connectivity, oFering unprecedented speed, reliability, and
+        eFiciency to support a wide range of applications, from autonomous vehicles and smart
+        cities to immersive virtual reality and precision healthcare.</p>
         <h2 className="text-5xl font-extrabold text-yellow-400 text-center mb-12">
           Research Focus 
         </h2>
-        <h3>My research delves into the following key aspects of 5G/6G networks:</h3>
+        <h3 className="text-center">My research delves into the following key aspects of 5G/6G networks:</h3>
         <div className="space-y-12">
           {researchAreas.map((area, index) => (
             <div
