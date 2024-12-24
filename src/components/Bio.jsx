@@ -1,4 +1,5 @@
 import React from "react";
+import bio from "../assets/bio.jpeg";
 
 const Bio = () => {
   return (
@@ -11,7 +12,7 @@ const Bio = () => {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="bg-yellow-400 p-6 rounded-lg shadow-xl">
               <img
-                src="/path-to-your-image/ai-profile.jpg"
+                src={bio}
                 alt="AI Engineer"
                 className="rounded-lg shadow-lg w-3/4 md:w-full"
               />
