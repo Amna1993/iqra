@@ -24,7 +24,7 @@ const Home = () => {
             I'm <span className="text-yellow-400 gradient-text">Iqra Batool</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
-            ’m a passionate and dedicated PhD researcher with expertise in <span className="text-yellow-400">wireless
+            I’m a passionate and dedicated PhD researcher with expertise in <span className="text-yellow-400">wireless
             communications, artificial intelligence (AI), and software fault prediction</span>. My research
             focuses on leveraging cutting-edge technologies to solve complex challenges in modern
             communication systems and software engineering.
