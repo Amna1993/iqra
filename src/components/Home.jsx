@@ -24,8 +24,10 @@ const Home = () => {
             I'm <span className="text-yellow-400 gradient-text">Iqra Batool</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
-            An <span className="text-yellow-400">AI Engineer</span> specializing in
-            developing cutting-edge machine learning models and solutions.
+            ’m a passionate and dedicated PhD researcher with expertise in <span className="text-yellow-400">wireless
+            communications, artificial intelligence (AI), and software fault prediction</span>. My research
+            focuses on leveraging cutting-edge technologies to solve complex challenges in modern
+            communication systems and software engineering.
           </p>
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
             <a
