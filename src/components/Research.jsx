@@ -35,7 +35,7 @@ const Research = () => {
   ];
 
   return (
-    <section id="research" className="py-20 bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white">
+    <section id="research" className="py-20 bg-black text-white">
       <div className="container mx-auto px-6">
         <h1 className="text-5xl font-extrabold text-yellow-400 text-center mb-6">
           Research
