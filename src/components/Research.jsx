@@ -18,7 +18,7 @@ const Research = () => {
     },
     {
       id: "contribution2",
-      title: "Mobility-Aware Networking: ",
+      title: "Mobility-Aware Networking",
       description:
         "Investigating the impact of user mobility on resource allocation, network slicing, and signal optimization to enhance service quality in highly dynamic environments.",
       image: mobility,
@@ -27,14 +27,14 @@ const Research = () => {
       id: "contribution3",
       title: "AI-Driven Optimization",
       description:
-        "Leveraging artificial intelligence, including deep learning and reinforcement learning, to address complex challenges like interference management, energy eFiciency, and predictive analytics in network optimization.",
+        "Leveraging artificial intelligence, including deep learning and reinforcement learning, to address complex challenges like interference management, energy efficiency, and predictive analytics in network optimization.",
       image: ai,
     },
     {
       id: "contribution4",
       title: "Beamforming and MIMO Systems",
       description:
-        "Exploring advanced techniques like massive MIMO and intelligent beamforming to improve signal quality, spectral eFiciency, and coverage in dense urban environments.",
+        "Exploring advanced techniques like massive MIMO and intelligent beamforming to improve signal quality, spectral efficiency, and coverage in dense urban environments.",
       image: beam,
     },
     {
@@ -48,7 +48,8 @@ const Research = () => {
 
   return (
     <section id="research" className="py-20 bg-black text-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4">
+        {/* Research Header */}
         <h1 className="text-5xl font-extrabold text-yellow-400 text-center mb-6">
           Research
         </h1>
@@ -64,13 +65,13 @@ const Research = () => {
           to immersive virtual reality and precision healthcare.
         </p>
 
-        {/* Contributions Section */}
+        {/* Research Areas */}
         <div className="mt-16">
           <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-12">
             Research Areas
           </h2>
           {/* Tab Navigation */}
-          <div className="flex justify-center space-x-4 mb-10">
+          <div className="flex flex-wrap justify-center space-x-4 mb-6">
             {contributions.map((contribution) => (
               <button
                 key={contribution.id}
@@ -93,36 +94,27 @@ const Research = () => {
                 tab === contribution.id && (
                   <div
                     key={contribution.id}
-                    className="items-center flex-wrap relative flex"
+                    className="flex flex-col md:flex-row items-center gap-6"
                   >
-                    <div
-                      className="transform -translate-x-10 rounded-br-[20%] rounded-tl-[20%] absolute top-0 left-0 w-[45%] h-[37%] md:w-[60%] md:h-[50%] bg-green-100 opacity-30 -z-10"
-                      aria-hidden="true"
-                    ></div>
-
                     {/* Text Section */}
                     <div className="w-full md:w-1/2">
-                      <div className="md:mr-10 lg:mx-20">
-                        <p className="mb-2 text-green-600 text-base uppercase font-bold">
-                          {contribution.subtitle}
-                        </p>
-                        <h2 className="text-2xl lg:text-4xl">
-                          {contribution.title}
-                        </h2>
-                        <p className="mt-4">{contribution.description}</p>
-                      </div>
+                      <p className="mb-2 text-green-600 text-base uppercase font-bold">
+                        {contribution.title}
+                      </p>
+                      <h2 className="text-2xl lg:text-4xl">
+                        {contribution.title}
+                      </h2>
+                      <p className="mt-4 text-gray-300">{contribution.description}</p>
                     </div>
 
                     {/* Image Section */}
-                    <div className="w-full md:w-1/2 md:mt-10 md:mb-5">
-                      <div className="rounded-tr-[20%] md:rounded-tr-[25%] rounded-bl-[20%] md:rounded-bl-[25%] overflow-hidden pb-[63.7%] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                          <img
-                            src={contribution.image}
-                            alt={contribution.title}
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
+                    <div className="w-full md:w-1/2">
+                      <div className="rounded-lg overflow-hidden shadow-lg">
+                        <img
+                          src={contribution.image}
+                          alt={contribution.title}
+                          className="w-full h-auto object-cover"
+                        />
                       </div>
                     </div>
                   </div>
@@ -130,50 +122,29 @@ const Research = () => {
             )}
           </div>
         </div>
+
         {/* Contributions Section */}
         <div className="mt-16">
-  <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-12">
-    Contributions
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-    {/* Contribution 1 */}
-    <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      
-      <p className="text-black leading-relaxed">
-        Designed and simulated realistic network scenarios using frameworks like 
-        Sionna to validate resource allocation and throughput prediction models.
-      </p>
-    </div>
+          <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-12">
+            Contributions
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {[
+              "Designed and simulated realistic network scenarios using frameworks like Sionna to validate resource allocation and throughput prediction models.",
+              "Developed synthetic datasets incorporating advanced features like mobility, beamforming, and environmental conditions for network performance analysis.",
+              "Published research in leading conferences and journals, advancing the understanding of mobility-aware resource allocation and AI-driven optimization.",
+              "Specialized in software fault prediction, healthcare analytics, and serverless edge computing to optimize healthcare outcomes and enable real-time data processing.",
+            ].map((content, idx) => (
+              <div
+                key={idx}
+                className="bg-yellow-400 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <p className="text-black leading-relaxed">{content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
-    {/* Contribution 2 */}
-    <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      
-      <p className="text-black leading-relaxed">
-        Developed synthetic datasets incorporating advanced features like mobility, 
-        beamforming, and environmental conditions for network performance analysis.
-      </p>
-    </div>
-
-    {/* Contribution 3 */}
-    <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      
-      <p className="text-black leading-relaxed">
-        Published research in leading conferences and journals, advancing the 
-        understanding of mobility-aware resource allocation and AI-driven optimization.
-      </p>
-    </div>
-
-    {/* Contribution 4 */}
-    <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      
-      <p className="text-black leading-relaxed">
-        Specialized in software fault prediction, healthcare analytics, and serverless 
-        edge computing to optimize healthcare outcomes and enable real-time data processing.
-      </p>
-    </div>
-    
-  </div>
-</div>
         {/* Future Goals Section */}
         <div className="mt-16">
           <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-6">
@@ -193,4 +164,3 @@ const Research = () => {
 };
 
 export default Research;
-
