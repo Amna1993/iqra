@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/profile.jpeg';
+import bio from '../assets/bio.jpeg';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <div className="mb-10 md:mb-0">
           <div className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-xl border-4 border-yellow-400">
             <img 
-              src={profile}
+              src={bio}
               alt="Iqra"
               className="w-full h-full object-cover object-top hover:scale-105 transform transition duration-500"
             />
