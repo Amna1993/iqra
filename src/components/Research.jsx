@@ -42,7 +42,7 @@ const Research = () => {
       title: "Beyond 5G (6G) Networks",
       description:
         "Contributing to the evolution of 6G networks by exploring emerging concepts like terahertz communication, ultra-reliable low-latency communication (URLLC), and AI-native networks.",
-      image: beam,
+      image: network,
     },
   ];
 
