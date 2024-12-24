@@ -11,34 +11,37 @@ const Research = () => {
   const contributions = [
     {
       id: "contribution1",
-      title: "Network Simulation",
-      subtitle: "Realistic Network Scenarios",
+      title: "Resource Allocation",
       description:
-        "Designed and simulated realistic network scenarios using frameworks like Sionna to validate resource allocation and throughput prediction models.",
+        "Developing efficient algorithms for dynamic resource management in Device-to-Device (D2D) communications, IoT, and cell-free networks to maximize throughput and minimize latency",
       image: device,
     },
     {
       id: "contribution2",
-      title: "Synthetic Datasets",
-      subtitle: "Advanced Data Modeling",
+      title: "Mobility-Aware Networking: ",
       description:
-        "Developed synthetic datasets incorporating advanced features like mobility, beamforming, and environmental conditions for network performance analysis.",
+        "Investigating the impact of user mobility on resource allocation, network slicing, and signal optimization to enhance service quality in highly dynamic environments.",
       image: mobility,
     },
     {
       id: "contribution3",
-      title: "Research Publications",
-      subtitle: "Advancing Wireless Research",
+      title: "AI-Driven Optimization",
       description:
-        "Published research in leading conferences and journals, advancing the understanding of mobility-aware resource allocation and AI-driven optimization.",
+        "Leveraging artificial intelligence, including deep learning and reinforcement learning, to address complex challenges like interference management, energy eFiciency, and predictive analytics in network optimization.",
       image: ai,
     },
     {
       id: "contribution4",
-      title: "Interdisciplinary Expertise",
-      subtitle: "AI and Healthcare Analytics",
+      title: "Beamforming and MIMO Systems",
       description:
-        "Specialized in software fault prediction, healthcare analytics, and serverless edge computing to optimize healthcare outcomes and enable real-time data processing.",
+        "Exploring advanced techniques like massive MIMO and intelligent beamforming to improve signal quality, spectral eFiciency, and coverage in dense urban environments.",
+      image: beam,
+    },
+    {
+      id: "contribution5",
+      title: "Beyond 5G (6G) Networks",
+      description:
+        "Contributing to the evolution of 6G networks by exploring emerging concepts like terahertz communication, ultra-reliable low-latency communication (URLLC), and AI-native networks.",
       image: beam,
     },
   ];
@@ -135,9 +138,7 @@ const Research = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
     {/* Contribution 1 */}
     <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      <h3 className="text-2xl font-bold text-black mb-4">
-        Network Simulation
-      </h3>
+      
       <p className="text-black leading-relaxed">
         Designed and simulated realistic network scenarios using frameworks like 
         Sionna to validate resource allocation and throughput prediction models.
@@ -146,9 +147,7 @@ const Research = () => {
 
     {/* Contribution 2 */}
     <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      <h3 className="text-2xl font-bold text-black mb-4">
-        Synthetic Datasets
-      </h3>
+      
       <p className="text-black leading-relaxed">
         Developed synthetic datasets incorporating advanced features like mobility, 
         beamforming, and environmental conditions for network performance analysis.
@@ -157,9 +156,7 @@ const Research = () => {
 
     {/* Contribution 3 */}
     <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      <h3 className="text-2xl font-bold text-black mb-4">
-        Research Publications
-      </h3>
+      
       <p className="text-black leading-relaxed">
         Published research in leading conferences and journals, advancing the 
         understanding of mobility-aware resource allocation and AI-driven optimization.
@@ -168,14 +165,13 @@ const Research = () => {
 
     {/* Contribution 4 */}
     <div className="flex flex-col bg-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-yellow-400 transition-shadow duration-300">
-      <h3 className="text-2xl font-bold text-black mb-4">
-        Interdisciplinary Expertise
-      </h3>
+      
       <p className="text-black leading-relaxed">
         Specialized in software fault prediction, healthcare analytics, and serverless 
         edge computing to optimize healthcare outcomes and enable real-time data processing.
       </p>
     </div>
+    
   </div>
 </div>
         {/* Future Goals Section */}
