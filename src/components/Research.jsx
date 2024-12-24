@@ -35,7 +35,7 @@ const Research = () => {
   ];
 
   return (
-    <section id="research" className="py-20 bg-black text-white">
+    <section id="research" className="py-20 bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white">
       <div className="container mx-auto px-6">
         <h1 className="text-5xl font-extrabold text-yellow-400 text-center mb-6">
           Research
@@ -85,13 +85,46 @@ const Research = () => {
             </div>
           ))}
         </div>
+
+        {/* Contributions Section */}
+        <div className="mt-16">
+          <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-6">
+            Contributions
+          </h2>
+          <ul className="text-lg text-gray-300 space-y-4 max-w-4xl mx-auto leading-relaxed list-disc list-inside">
+            <li>
+              Designed and simulated realistic network scenarios using frameworks
+              like Sionna to validate resource allocation and throughput prediction
+              models.
+            </li>
+            <li>
+              Developed synthetic datasets incorporating advanced features like mobility,
+              beamforming, and environmental conditions for network performance analysis.
+            </li>
+            <li>
+              Published research in leading conferences and journals, advancing the
+              understanding of mobility-aware resource allocation and AI-driven
+              optimization in 5G/6G networks.
+            </li>
+          </ul>
+        </div>
+
+        {/* Future Goals Section */}
+        <div className="mt-16">
+          <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-6">
+            Future Goals
+          </h2>
+          <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+            I aim to contribute to the realization of 6G networks, focusing on the
+            integration of AI, quantum communication, and green networking solutions.
+            My goal is to help bridge the gap between theoretical advancements and
+            real-world applications, ensuring that next-generation networks are secure,
+            efficient, and inclusive.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Research;
-
-
-
-
