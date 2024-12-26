@@ -20,7 +20,7 @@ const Publications = () => {
     <section id="publications" className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <h2 className="text-5xl font-extrabold text-center text-yellow-400 mb-12">
-          Publications
+          Awards
         </h2>
         <div className="space-y-8">
           {publications.map((publication, index) => (
