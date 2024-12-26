@@ -42,7 +42,7 @@ const Navbar = () => {
             "bio",
             "publications",
             "courses",
-            "partnerships",
+            "awards",
             "funding",
             "join-us",
           ].map((section, index) => (
