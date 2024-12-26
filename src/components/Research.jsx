@@ -78,7 +78,7 @@ const Research = () => {
                 onClick={() => setTab(contribution.id)}
                 className={`px-4 py-2 font-bold text-sm uppercase border-b-2 ${
                   tab === contribution.id
-                    ? "border-green-500 text-green-600"
+                    ? "border-yellow-500 text-yellow-600"
                     : "border-gray-300 text-gray-600"
                 }`}
               >
@@ -98,10 +98,10 @@ const Research = () => {
                   >
                     {/* Text Section */}
                     <div className="w-full md:w-1/2">
-                      <p className="mb-2 text-green-600 text-base uppercase font-bold">
+                      {/* <p className="mb-2 text-green-600 text-base uppercase font-bold">
                         {contribution.title}
-                      </p>
-                      <h2 className="text-2xl lg:text-4xl">
+                      </p> */}
+                      <h2 className="text-2xl lg:text-4xl text-yellow-400">
                         {contribution.title}
                       </h2>
                       <p className="mt-4 text-gray-300">{contribution.description}</p>
