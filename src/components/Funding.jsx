@@ -1,26 +1,16 @@
 const Funding = () => {
     const fundingOpportunities = [
       {
-        title: "AI Research Grants",
-        description:
-          "Apply for grants to fund innovative AI research projects, focusing on advancements in machine learning, ethics, and human-centric AI.",
-        deadline: "Deadline: June 30, 2025",
-        image: "/path-to-grant-image.jpg",
+
+        
+
+        title: "Scholarship and Grants",
+       
       },
       {
-        title: "Startup Incubation Program",
-        description:
-          "Support for AI-focused startups, including seed funding, mentorship, and access to cutting-edge resources.",
-        deadline: "Deadline: December 15, 2024",
-        image: "/path-to-incubation-image.jpg",
-      },
-      {
-        title: "Industry-Academia Collaboration",
-        description:
-          "Funding for joint research projects between academic institutions and industry partners in AI.",
-        deadline: "Deadline: March 31, 2025",
-        image: "/path-to-collaboration-image.jpg",
-      },
+        title: "Western University Ontario, NSERC",
+      }
+        
     ];
   
     return (
@@ -35,11 +25,7 @@ const Funding = () => {
                 key={index}
                 className="bg-yellow-400 p-6 rounded-lg shadow-lg hover:shadow-xl transition"
               >
-                <img
-                  src={funding.image}
-                  alt={funding.title}
-                  className="rounded-t-lg w-full h-40 object-cover mb-4"
-                />
+               
                 <h3 className="text-2xl font-bold text-black mb-2">
                   {funding.title}
                 </h3>

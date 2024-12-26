@@ -29,10 +29,10 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-yellow-400">Contact</h3>
             <ul className="text-gray-300 space-y-3">
               <li>
-                <span className="font-bold text-white">Address:</span> San Francisco, California
+                <span className="font-bold text-white">Address:</span> Westewrn University, London, Ontario
               </li>
               <li>
-                <span className="font-bold text-white">Phone:</span> +1 223 456 789
+                <span className="font-bold text-white">Phone:</span> +++++++++++
               </li>
               <li>
                 <span className="font-bold text-white">Email:</span>{" "}
@@ -40,7 +40,7 @@ const Footer = () => {
                   href="mailto:info@aiwebsite.com"
                   className="hover:text-yellow-400 transition"
                 >
-                  info@aiwebsite.com
+                  ibatool2@uwo.ca
                 </a>
               </li>
             </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-6">
-          &copy; {new Date().getFullYear()} Dr. [Your Name]. All rights reserved.
+          &copy; {new Date().getFullYear()} Dr. Iqra Batool. All rights reserved.
         </div>
       </div>
     </footer>
