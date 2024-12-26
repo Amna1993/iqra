@@ -10,6 +10,7 @@ import Partnerships from "./components/Partnerships";
 import Funding from "./components/Funding";
 import JoinUs from "./components/JoinUs";
 import Footer from "./components/Footer";
+import Publication from "./components/Publication";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <Team />
       <Bio />
       <Publications />
-      <Courses />
+      <Publication />
       <Partnerships />
+      <Courses />
       <Funding />
       <JoinUs />
       <Footer />

@@ -41,7 +41,7 @@ const Navbar = () => {
             "team",
             "bio",
             "awards",
-            "courses",
+            "publications",
             "partnerships",
             "funding",
             "join-us",
