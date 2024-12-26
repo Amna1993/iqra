@@ -37,20 +37,17 @@ const Navbar = () => {
         >
           {[
             "home",
-            "research",
-            "team",
             "bio",
-            "awards",
+            "research",
             "publications",
+            "awards",
             "courses",
-            "partnerships",
             "funding",
+            "team",
+            "partnerships",
             "join-us",
-          ].map((section, index) => (
-            <li
-              key={section}
-              className="text-lg text-center md:text-left"
-            >
+          ].map((section) => (
+            <li key={section} className="text-lg text-center md:text-left">
               <button
                 onClick={() => handleScroll(section)}
                 className="block md:inline hover:text-yellow-400 focus:outline-none w-full py-2 transition duration-300"

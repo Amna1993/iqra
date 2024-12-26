@@ -15,13 +15,13 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <Research />
-      <Team />
       <Bio />
-      <Awards />
+      <Research />
       <Publication />
+      <Awards />
       <Courses />
       <Funding />
+      <Team /> 
       <Footer />
     </div>
   );

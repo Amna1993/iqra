@@ -17,7 +17,7 @@ const Publication = () => {
   ];
 
   return (
-    <section id="courses" className="py-20 bg-black text-white">
+    <section id="publications" className="py-20 bg-black text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-5xl font-extrabold text-yellow-400 text-center mb-12">
           Publications

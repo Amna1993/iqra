@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-yellow-400">About</h3>
             <p className="text-gray-300">
-              This website represents the journey of an AI Engineer, researcher, and innovator dedicated to advancing the boundaries of Artificial Intelligence and making impactful contributions to the field.
+            Explore my professional journey through my Google Scholar, ORCID, and GitHub profiles, showcasing impactful research and innovative projects in technology and science.
             </p>
           </div>
 
