@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Bio from "./components/Bio";
-import Publications from "./components/Publications";
+import Awards from "./components/Awards";
 import Team from "./components/Team";
 import Research from "./components/Research";
 import Courses from "./components/Courses";
@@ -20,7 +20,7 @@ function App() {
       <Research />
       <Team />
       <Bio />
-      <Publications />
+      <Awards />
       <Publication />
       <Partnerships />
       <Courses />
