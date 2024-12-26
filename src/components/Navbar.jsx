@@ -40,9 +40,9 @@ const Navbar = () => {
             "research",
             "team",
             "bio",
-            "publications",
-            "courses",
             "awards",
+            "courses",
+            "partnerships",
             "funding",
             "join-us",
           ].map((section, index) => (
