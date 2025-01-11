@@ -22,7 +22,7 @@ const Home = () => {
         {/* Right Side - Text Content */}
         <div className="text-center md:text-left md:ml-12 space-y-6">
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-            <span className="text-yellow-400 gradient-text">Iqra Batool</span>
+            <span className="text-yellow-400 gradient-text">Dr.Iqra Batool</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
             I’m a passionate and dedicated PhD researcher with expertise in <span className="text-yellow-400">wireless
