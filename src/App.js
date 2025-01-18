@@ -5,6 +5,7 @@ import Bio from "./components/Bio";
 import Awards from "./components/Awards";
 import Team from "./components/Team";
 import Research from "./components/Research";
+import Education from "./components/Education";
 import Courses from "./components/Courses";
 import Funding from "./components/Funding";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ function App() {
       <Home />
       <Bio />
       <Research />
+      <Education />
       <Publication />
       <Awards />
       <Courses />
