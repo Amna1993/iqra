@@ -39,6 +39,7 @@ const Navbar = () => {
             "home",
             "bio",
             "research",
+            "education",
             "publications",
             "awards",
             "courses",
