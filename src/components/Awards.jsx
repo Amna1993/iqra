@@ -14,6 +14,16 @@ const Publications = () => {
       title: "PhD in Computer Science (Full Funded Scholarship)",
       link: "#",
     },
+    {
+      title: "Youngest researcher award bahria university Islamabad (2022)",
+      link: "#",
+    },
+    {
+      title: "Best researcher of the year bahria university Islamabad (2023)",
+      link: "#",
+    },
+    
+
   ];
 
   return (
